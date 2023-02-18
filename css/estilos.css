@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Letra1';
+    src: url(../fuentes/Gajraj_One/GajrajOne-Regular.ttf);
+}
+
+body {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Letra1';
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+    color: black;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(145, 255, 0));
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+@keyframes div1 {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+main > section > div:nth-child(3) {
+    height: 150px;
+    width: 150px;
+    background: red;
+    transition: width 3s, height 4s, transform 2s;
+    animation-name: div1;
+    animation-duration: 4s;
+    margin-bottom: 20px;
+}
+main > section > div:nth-child(3):hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+@keyframes div2 {
+    0%   {background-color:red; left:0px; top:0px;}
+    10%  {background-color:yellow; left:100px; top:0px;}
+    20%  {background-color:blue; left:200px; top:0px;}
+    30%  {background-color:green; left:300px; top:0px;}
+    40% {background-color:red; left:400px; top:0px;}
+    50%  {background-color:yellow; left:500px; top:0px;}
+    60%  {background-color:blue; left:400px; top:0px;}
+    70%  {background-color:green; left:300px; top:0px;}
+    80% {background-color:red; left:200px; top:0px;}
+    90%  {background-color:yellow; left:100px; top:0px;}
+    100%  {background-color:blue; left:0px; top:0px;}
+}
+main > section > div:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: div2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+main > form > select {
+    margin-right: 20px;
+}
+main > form > input {
+    margin-right: 20px;
+}
+main > form > textarea {
+    margin-right: 20px;
+}
+
+.fipagina {
+    margin-top: 20px;
+}
