@@ -16,6 +16,7 @@ body {
     font-family: 'Letra1';
 }
 
+/*CAPÇALERA*/
 .menu {
     display: flex;
     justify-content: center;
@@ -27,7 +28,7 @@ body {
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(145, 255, 0));
 }
 
-nav ul {
+.menu > nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -35,16 +36,18 @@ nav ul {
     margin: 0;
 }
 
-nav li {
+.menu > nav li {
     margin: 0 20px;
 }
 
-nav a {
+.menu > nav a {
     text-decoration: none;
     color: blue;
 }
 
-@keyframes div1 {
+/*MENÚ*/
+/*ANIMACIÓ 1*/
+@keyframes animacio1 {
     from {background-color: red;}
     to {background-color: yellow;}
 }
@@ -52,8 +55,10 @@ main > section > div:nth-child(3) {
     height: 150px;
     width: 150px;
     background: red;
-    transition: width 3s, height 4s, transform 2s;
-    animation-name: div1;
+
+    /*TRANSICIÓ*/
+    transition: width 3s, height 4s, transform 2s; 
+    animation-name: animacio1;
     animation-duration: 4s;
     margin-bottom: 20px;
 }
@@ -63,7 +68,28 @@ main > section > div:nth-child(3):hover {
     transform: rotate(180deg);
 }
 
-@keyframes div2 {
+/*ANIMACIÓ 2*/
+@keyframes animacio2 {
+    0% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(-1);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+}
+main > section > article img {
+    width: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animacio2 5s linear infinite;
+}
+
+/*ANIMACIÓ 3*/
+@keyframes animacio3 {
     0%   {background-color:red; left:0px; top:0px;}
     10%  {background-color:yellow; left:100px; top:0px;}
     20%  {background-color:blue; left:200px; top:0px;}
@@ -81,11 +107,23 @@ main > section > div:nth-child(4) {
     height: 100px;
     background-color: red;
     position: relative;
-    animation-name: div2;
+    animation-name: animacio3;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    margin-bottom: 20px;
 }
-
+/* NO ME FUNCIONA
+main > section > div:nth-child(5) {
+    height: 300px;
+    background-image: url(../img/paisaje.jpg);
+    background-repeat: no-repeat;
+    transition: transform 1s ease-in-out;
+}
+main > section > div:nth-child(5):hover {
+    transform: scaleX(-1);
+}
+*/
+/*AJUSTAR MARGES*/
 main > form > select {
     margin-right: 20px;
 }
