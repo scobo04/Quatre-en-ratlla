@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <title>joc</title>
@@ -28,13 +29,28 @@
     <meta name='reply-to' content='email@hotmail.com'>
     <meta name='owner' content=''>
 </head>
+
 <body>
     <header>
-        <nav>
-            <div class="menu">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Índex</a></li>
+                    <li><a href="./ajuda.html">Ajuda</a></li>
+                    <li><a href="./mapa.html">Mapa</a></li>
+                    <li><a href="./contacte.html">Contacte</a></li>
+                    <li><a href="./configuracio.html">Configuració</a></li>
+                    <li><a href="./altra.html">Altra</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <aside class="lateral">
+            <div class="menu_lateral">
                 <nav>
                     <ul>
-                        <li><a href="./index.html">Índex</a></li>
+                        <li><a href="./joc.html">Joc</a></li>
                         <li><a href="./ajuda.html">Ajuda</a></li>
                         <li><a href="./mapa.html">Mapa</a></li>
                         <li><a href="./contacte.html">Contacte</a></li>
@@ -43,17 +59,21 @@
                     </ul>
                 </nav>
             </div>
-        </nav>
-    </header>
-    <main>
-        <h2>Joc</h2>
-        <canvas>
-            
-        </canvas>
+        </aside>
+        <section class="contingut">
+            <h2>Joc</h2>
+            <article>
+                <img src="./img/tablero_4enRaya.jpg" alt="tablero">
+            </article>
+            <canvas>
+
+            </canvas>
+        </section>
     </main>
     <footer class="fipagina">
         <p>Autor: Sergio Cobo</p>
         <p><a href="mailto:sergio@gmail.com">sergio@gmail.com</a></p>
     </footer>
 </body>
+
 </html>

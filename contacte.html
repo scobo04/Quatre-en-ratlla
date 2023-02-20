@@ -32,48 +32,62 @@
 
 <body>
     <header>
-        <nav>
-            <div class="menu">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./joc.html">Joc</a></li>
+                    <li><a href="./ajuda.html">Ajuda</a></li>
+                    <li><a href="./mapa.html">Mapa</a></li>
+                    <li><a href="./index.html">Índex</a></li>
+                    <li><a href="./configuracio.html">Configuració</a></li>
+                    <li><a href="./altra.html">Altra</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <aside class="lateral">
+            <div class="menu_lateral">
                 <nav>
                     <ul>
                         <li><a href="./joc.html">Joc</a></li>
                         <li><a href="./ajuda.html">Ajuda</a></li>
                         <li><a href="./mapa.html">Mapa</a></li>
-                        <li><a href="./index.html">Índex</a></li>
+                        <li><a href="./contacte.html">Contacte</a></li>
                         <li><a href="./configuracio.html">Configuració</a></li>
                         <li><a href="./altra.html">Altra</a></li>
                     </ul>
                 </nav>
             </div>
-        </nav>
-    </header>
-    <main>
-        <h2>Formulari</h2>
-        <form action="https://theteacher.codiblau.com/llmqs/practica/contacte" method="post">
-            <label for="nom">Nom:</label>
-            <input type="text" name="name" id="nom" minlength="2" maxlength="30" required>
+        </aside>
+        <section class="contingut">
+            <h2>Contacte</h2>
+            <form action="https://theteacher.codiblau.com/llmqs/practica/contacte" method="post">
+                <label for="nom">Nom:</label>
+                <input type="text" name="name" id="nom" minlength="2" maxlength="30" required>
 
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
 
-            <select name="type">
-                <option value="CONSULTA">Consulta general</option>
-                <option value="ERROR">Error</option>
-                <option value="MILLORA">Millores</option>
-                <option value="SUBSCRIBE">Inscripció anual</option>
-            </select>
+                <select name="type">
+                    <option value="CONSULTA">Consulta general</option>
+                    <option value="ERROR">Error</option>
+                    <option value="MILLORA">Millores</option>
+                    <option value="SUBSCRIBE">Inscripció anual</option>
+                </select>
 
-            <label for="telefon">Telèfon:</label>
-            <input type="tel" name="phone" id="telefon">
+                <label for="telefon">Telèfon:</label>
+                <input type="tel" name="phone" id="telefon">
 
-            <label for="data_naixament">Data de naixament:</label>
-            <input type="date" name="birthday" id="data_naixament">
+                <label for="data_naixament">Data de naixament:</label>
+                <input type="date" name="birthday" id="data_naixament">
 
-            <label for="missatge">Missatge:</label>
-            <textarea name="message" id="missatge" required>Missatge de l'usuari</textarea>
+                <label for="missatge">Missatge:</label>
+                <textarea name="message" id="missatge" required>Missatge de l'usuari</textarea>
 
-            <input type="submit" value="ENVIAR">
-        </form>
+                <input type="submit" value="ENVIAR">
+            </form>
+        </section>
     </main>
     <footer class="fipagina">
         <p>Autor: Sergio Cobo</p>
