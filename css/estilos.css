@@ -300,8 +300,6 @@ textarea {
 /*FOOTER*/
 .fipagina {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
     grid-gap: 20px;
     align-items: center;
     justify-content: center;
@@ -316,20 +314,9 @@ textarea {
     justify-content: center;
 }
 
-.fipagina>div:nth-child(1) {
-    grid-column: 1 / 2;
-}
-
-.fipagina>div:nth-child(2) {
-    grid-column: 2 / 3;
-}
-
-.fipagina>div:nth-child(3) {
-    grid-column: 3 / 4;
-}
-
 .fipagina p {
     text-align: center;
+    margin-right: 10px;
 }
 
 .fipagina img.redes {
@@ -337,9 +324,4 @@ textarea {
     margin-left: auto;
     margin-right: 10px;
     border-radius: 50%;
-}
-
-.fipagina>p:nth-child(4) {
-    grid-column: 2 / 3;
-    margin-right: 10px;
 }
