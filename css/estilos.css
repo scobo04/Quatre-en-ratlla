@@ -287,10 +287,12 @@ textarea {
 
 .submit {
     margin-left: 160px;
+    margin-bottom: 20px;
 }
 
 .submit2 {
     margin-left: 320px;
+    margin-bottom: 20px;
 }
 
 /*FOOTER*/
