@@ -86,6 +86,7 @@ main {
 main>aside {
     grid-column: 1 / 2;
     padding-top: 20px;
+    border-right: 2px solid grey;
 }
 
 main>aside li {
@@ -97,6 +98,7 @@ main>aside li {
 main>section {
     grid-column: 2 / 3;
     padding-top: 20px;
+    margin-left: 20px;
 }
 
 /*ANIMACIÓ 1*/
