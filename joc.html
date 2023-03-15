@@ -35,7 +35,8 @@
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="./index.html">Índex</a></li>
+                    <li class="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
+                    <li><a href="./joc.html">Joc</a></li>
                     <li><a href="./ajuda.html">Ajuda</a></li>
                     <li><a href="./mapa.html">Mapa</a></li>
                     <li><a href="./contacte.html">Contacte</a></li>
@@ -50,20 +51,32 @@
             <div class="menu_lateral">
                 <nav>
                     <ul>
-                        <li><a href="./joc.html">Joc</a></li>
-                        <li><a href="./ajuda.html">Ajuda</a></li>
-                        <li><a href="./mapa.html">Mapa</a></li>
-                        <li><a href="./contacte.html">Contacte</a></li>
-                        <li><a href="./configuracio.html">Configuració</a></li>
-                        <li><a href="./altra.html">Altra</a></li>
+                        <li>Com es juga al Quatre en ratlla?
+                            <ul>
+                                <li><a href="./jugadors.html">Jugadors</a></li>
+                                <li><a href="./tauler.html">Tauler</a></li>
+                                <li><a href="./fitxes.html">Fitxes</a></li>
+                                <li><a href="./iniciJoc.html">Inici del joc</a></li>
+                                <li><a href="./desenvolupamentJoc.html">Desenvolupament del joc</a></li>
+                                <li><a href="./fiJoc.html">Fi del joc</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </aside>
         <section class="contingut">
             <h2>Joc</h2>
-            <article>
+            <article class="animacionJuego">
                 <img src="./img/tablero_4enRaya.jpg" alt="tablero">
+                <p>
+                    El Quatre en ratlla, també anomenat 4 en ratlla, 4 en línia o Connecta 4, és un joc de taula per a 2
+                    jugadors o contra el mòdul d'Intel·ligència Artificial (Ai). Cada jugador tria un color
+                    diferent per a la fitxa i mitjançant torns col·loca una cada vegada en un panell de 7 columnes x 6
+                    files. Les fitxes cauen apilandose a la seva columna. L'objectiu del joc és connectar quatre fitxes
+                    d'un mateix color formant una línia horitzontal, vertical o diagonal abans que ho faci l'oponent.
+                </p>
+                
             </article>
             <canvas>
 
@@ -71,8 +84,22 @@
         </section>
     </main>
     <footer class="fipagina">
-        <p>Autor: Sergio Cobo</p>
-        <p><a href="mailto:sergio@gmail.com">sergio@gmail.com</a></p>
+        <div>
+            <img src="./img/transportistas.png" alt="logo">
+        </div>
+        <div>
+            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="insta" class="redes"></a>
+            <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="redes"></a>
+            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="redes"></a>
+            <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="redes"></a>
+            <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="redes"></a>
+            <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="redes"></a>
+            <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="redes"></a>
+        </div>
+        <div>
+            <img src="./img/formaspago.png" alt="logo">
+        </div>
+        <p class="centrado">2023 &copy; Metronic Shop UI. ALL Rights Reserved</p>
     </footer>
 </body>
 
