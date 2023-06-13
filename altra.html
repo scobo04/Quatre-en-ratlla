@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>altra</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/galeria_dinamica.css">
     <!--metadatos sociales twitter-->
     <meta name="twitter:title" content="European Travel Destinations ">
     <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
@@ -67,20 +68,90 @@
         </aside>
         <section class="contingut">
             <h2>Altra</h2>
+
+            <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+            <script src="pokemon.js"></script>
+            <canvas id="canvas" width="460" height="460"></canvas>
+
+            <script src="galeria_dinamica.js"></script>
+            <img id="galeria" src="https://picsum.photos/id/200/400/400" alt="">
+            <p id="mitexto">Vacas que me encontré paseando</p>
+
+
+            <nav id="galeria_dinamica">
+                <ul>
+                    <li><a onclick="cargarfoto(201,0)"><img src="https://picsum.photos/id/201/400/400" alt=""></a></li>
+                    <li><a onclick="cargarfoto(202,1)"><img src="https://picsum.photos/id/202/400/400" alt=""></a></li>
+                    <li><a onclick="cargarfoto(203,2)"><img src="https://picsum.photos/id/203/400/400" alt=""></a></li>
+                    <li><a onclick="cargarfoto(204,3)"><img src="https://picsum.photos/id/204/400/400" alt=""></a></li>
+                </ul>
+            </nav>
+
+            <!--<form action="https://theteacher.codiblau.com/llmqs/practica/contacte" method="post" class="formulari">
+                <label for="nom_usuari">Nom usuari:</label>
+                <input type="text" name="name" id="nom_usuari" minlength="2" maxlength="30" required>
+                <br>
+                <label for="contrasenya_usuari">Contrasenya:</label>
+                <input type="password" name="name" id="contrasenya_usuari" required>
+                <br>
+                <label for="nom">Nom:</label>
+                <input type="text" name="name" id="nom" minlength="2" maxlength="30" required>
+                <br>
+                <label for="lli1_usuari">Llinatge 1:</label>
+                <input type="text" name="name" id="lli1_usuari" minlength="2" maxlength="30" required>
+                <br>
+                <label for="lli2_usuari">Llinatge 2:</label>
+                <input type="text" name="name" id="lli2_usuari" minlength="2" maxlength="30">
+                <br>
+                <label for="telefon">Telèfon:</label>
+                <input type="tel" name="telefon" id="telefon">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="direccio">Direcció:</label>
+                <input type="text" name="direccio" id="direccio">
+                <br>
+                <label for="telefon">Telèfon:</label>
+                <input type="tel" name="phone" id="telefon">
+                <br>
+                <label for="data_naixament">Data de naixament:</label>
+                <input type="date" name="birthday" id="data_naixament">
+                <br>
+                <label for="missatge">Missatge:</label>
+                <textarea name="message" id="missatge" required>Missatge de l'usuari</textarea>
+                <br>
+                <input type="submit" value="ENVIAR" class="submit">
+                <input type="reset" value="RESET">
+            </form>-->
         </section>
     </main>
     <footer class="fipagina">
         <div>
-            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="insta" class="redes"></a>
-            <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="redes"></a>
-            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="redes"></a>
-            <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="redes"></a>
-            <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="redes"></a>
-            <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="redes"></a>
-            <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="redes"></a>
+            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="insta" class="xarxes"></a>
+            <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="xarxes"></a>
+            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="xarxes"></a>
+            <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="xarxes"></a>
+            <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="xarxes"></a>
+            <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="xarxes"></a>
+            <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="xarxes"></a>
         </div>
-        <p class="centrado">2023 &copy; Metronic Shop UI. ALL Rights Reserved</p>
+        <p class="centrado">2023 &copy; IES Manacor ALL Rights Reserved</p>
     </footer>
+    <!--<script>
+        var galeriaDiv = document.getElementById("galeria");
+
+        // creo una instancia
+        var galeria = new BibliotecaGaleria(galeriaDiv);
+
+        // añado imágenes a la galería
+        galeria.agregarImagen("ruta-imagen1.jpg");
+        galeria.agregarImagen("ruta-imagen2.jpg");
+        galeria.agregarImagen("ruta-imagen3.jpg");
+
+        // Muestra la galería
+        galeria.mostrar();
+    </script>-->
 </body>
 
 </html>

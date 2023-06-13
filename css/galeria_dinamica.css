@@ -1,0 +1,25 @@
+#galeria {
+    width: 400px;
+}
+
+section > nav#galeria_dinamica ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+section > nav#galeria_dinamica ul li a img {
+    width: 100px;
+    opacity: 50%;
+    transition: 0.3s;
+    filter: grayscale(50%);
+}
+section > nav#galeria_dinamica ul li a img:hover {
+    opacity: 100%;
+    margin-top: -5px;
+    filter: grayscale(0%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+section > nav#galeria_dinamica ul li a img:active {
+    transform: scale(0.8);
+}

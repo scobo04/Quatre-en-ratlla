@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cuatro en Raya</title>
+  <link rel="stylesheet" href="./juego.css">
+</head>
+
+<body>
+<p id="missatge"></p>
+<audio id="audio">
+  <source src="./shallow 2.mp3" type="audio/mp3">
+</audio>
+<div id="cuatroenraya">
+  <div id="p1"></div>
+  <div id="p2"></div>
+  <div id="p3"></div>
+  <div id="p4"></div>
+  <div id="p5"></div>
+  <div id="p6"></div>
+  <div id="p7"></div>
+  <div id="p8"></div>
+  <div id="p9"></div>
+  <div id="p10"></div>
+  <div id="p11"></div>
+  <div id="p12"></div>
+  <div id="p13"></div>
+  <div id="p14"></div>
+  <div id="p15"></div>
+  <div id="p16"></div>
+  <div id="p17"></div>
+  <div id="p18"></div>
+  <div id="p19"></div>
+  <div id="p20"></div>
+  <div id="p21"></div>
+  <div id="p22"></div>
+  <div id="p23"></div>
+  <div id="p24"></div>
+  <div id="p25"></div>
+  <div id="p26"></div>
+  <div id="p27"></div>
+  <div id="p28"></div>
+  <div id="p29"></div>
+  <div id="p30"></div>
+  <div id="p31"></div>
+  <div id="p32"></div>
+  <div id="p33"></div>
+  <div id="p34"></div>
+  <div id="p35"></div>
+  <div id="p36"></div>
+  <div id="p37"></div>
+  <div id="p38"></div>
+  <div id="p39"></div>
+  <div id="p40"></div>
+  <div id="p41"></div>
+  <div id="p42"></div>
+</div>
+<script>
+  var caselles = document.querySelectorAll("#cuatroenraya>div");
+  var taulell = [];
+  var torn = 0;
+
+  function Casella(jugador, color, posicio, id) {
+    this.jugador = jugador;
+    this.color = color;
+    this.posicio = posicio;
+    this.id = id;
+  }
+
+  function init() {
+    for (var i = 0; i < caselles.length; i++) {
+      var casella = new Casella(null, null, null, "p" + (i + 1));
+      taulell.push(casella);
+
+      caselles[i].addEventListener('click', function () {
+        var jugador;
+
+        for (var i = 0; i < taulell.length; i++) {
+          if (taulell[i].id === this.id) {
+            if (torn % 2 === 0) {
+              taulell[i].color = "green";
+              jugador = "X";
+            } else {
+              taulell[i].color = "white";
+              jugador = "O";
+            }
+            taulell[i].posicio = i;
+            taulell[i].jugador = jugador;
+          }
+        }
+
+        console.log(taulell);
+        pintar();
+
+        if (winner(jugador)) {
+          document.querySelector("#missatge").innerHTML = "Ha ganado el jugador " + jugador;
+          document.querySelector("#audio").play();
+        }
+
+        torn++;
+      })
+    }
+
+    console.log(taulell);
+  }
+
+  function pintar() {
+    for (var i = 0; i < taulell.length; i++) {
+      var id = taulell[i].id;
+      document.querySelector("#" + id).style.backgroundColor = taulell[i].color;
+      document.querySelector("#" + id).innerHTML = taulell[i].jugador;
+    }
+  }
+
+  function winner(jugador) {
+    for (var i = 0; i < taulell.length; i++) {
+      if (taulell[i].jugador === jugador) {
+        var row = Math.floor(i / 7);
+        var col = i % 7;
+
+        // Comprobación horizontal
+        if (col <= 3 &&
+                taulell[i].jugador === taulell[i + 1].jugador &&
+                taulell[i].jugador === taulell[i + 2].jugador &&
+                taulell[i].jugador === taulell[i + 3].jugador) {
+          return true;
+        }
+
+        // Comprobación vertical
+        if (row <= 2 &&
+                taulell[i].jugador === taulell[i + 7].jugador &&
+                taulell[i].jugador === taulell[i + 14].jugador &&
+                taulell[i].jugador === taulell[i + 21].jugador) {
+          return true;
+        }
+
+        // Comprobación diagonal hacia abajo y a la derecha
+        if (row <= 2 && col <= 3 &&
+                taulell[i].jugador === taulell[i + 8].jugador &&
+                taulell[i].jugador === taulell[i + 16].jugador &&
+                taulell[i].jugador === taulell[i + 24].jugador) {
+          return true;
+        }
+
+        // Comprobación diagonal hacia abajo y a la izquierda
+        if (row <= 2 && col >= 3 &&
+                taulell[i].jugador === taulell[i + 6].jugador &&
+                taulell[i].jugador === taulell[i + 12].jugador &&
+                taulell[i].jugador === taulell[i + 18].jugador) {
+          return true;
+        }
+      }
+    }
+
+    return false;
+  }
+
+  init();
+</script>
+</body>
+
+</html>
