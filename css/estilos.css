@@ -107,62 +107,6 @@ main > section.contingut > p {
     margin-right: 5px;
 }
 
-main > section > iframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main > section > article > img {
-    margin-bottom: 20px;
-}
-
-main > section > canvas#canvas {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main > section > img#galeria {
-    width: 460px;
-    height: 460px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px;
-}
-
-/* centrado de la galería */
-#textoImagenGaleria {
-    text-align: center;
-}
-
-#galeria_dinamica {
-    display: flex;
-    justify-content: center;
-}
-
-#galeria_dinamica ul {
-    list-style: none;
-    padding: 0;
-}
-
-#galeria_dinamica li {
-    margin-right: 10px;
-}
-
-#galeria_dinamica li:last-child {
-    margin-right: 0;
-}
-
-
-#canvasJuego {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 450px;
-    height: 386px;
-}
 
 #reiniciarBoton {
     display: block;
@@ -174,6 +118,10 @@ main > section > img#galeria {
 }
 
 #mensaje {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }
 
@@ -204,48 +152,6 @@ main > section > img#galeria {
     margin-left: auto;
     margin-right: 10px;
     border-radius: 50%;
-}
-
-
-/* FORMULARIOS */
-h2 {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-input, select, textarea {
-    width: 50%;
-    padding: 5px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-input[type=submit], input.submit {
-    padding: 5px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-input[type=submit]:hover, input.submit:hover {
-    background-color: #0056b3;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -316,7 +222,7 @@ input[type=submit]:hover, input.submit:hover {
         text-align: center;
     }
 
-    main > section > canvas#canvas {
+    main > section > canvas#canvasPokemon {
         width: 460px;
         height: 460px;
         display: block;
@@ -398,7 +304,7 @@ input[type=submit]:hover, input.submit:hover {
         height: 236px;
     }
 
-    main > section > canvas#canvas {
+    main > section > canvas#canvasPokemon {
         width: 400px;
         height: 400px;
     }

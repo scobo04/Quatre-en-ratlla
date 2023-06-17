@@ -6,10 +6,10 @@
 window.onload = function() {
     'use strict';
 
-    var canvas = document.getElementById('canvas');
+    var canvas = document.getElementById('canvasPokemon');
     var ctx = canvas.getContext('2d');
-    var w = document.getElementById('canvas').offsetWidth;
-    var h = document.getElementById('canvas').offsetHeight;
+    var w = document.getElementById('canvasPokemon').offsetWidth;
+    var h = document.getElementById('canvasPokemon').offsetHeight;
     var terrainImageLoaded = false,
         houseImageLoaded = false,
         pokeballImageLoaded = false,

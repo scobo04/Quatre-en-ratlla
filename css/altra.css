@@ -1,17 +1,14 @@
-#mapa {
-    width: 655px;
-    height: 700px;
-}
-
-main > section > div#mapa {
+main > section > canvas#canvasPokemon {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-main > section > iframe {
+main > section > img#galeria {
+    width: 460px;
+    height: 460px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 5px;
 }

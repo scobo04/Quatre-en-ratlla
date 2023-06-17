@@ -13,10 +13,10 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!--metadatos sociales facebook-->
-    <meta property="og:title" content="The Rock" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <meta property="og:title" content="The Rock"/>
+    <meta property="og:type" content="video.movie"/>
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/"/>
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg"/>
 
     <!--más metadatos necesarios-->
     <meta name='keywords' content='your, tags'>
@@ -32,114 +32,63 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu">
+<header>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li class="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
+                <li><a href="./joc.html">Joc</a></li>
+                <li><a href="./ajuda.html">Ajuda</a></li>
+                <li><a href="./mapa.html">Mapa</a></li>
+                <li><a href="./contacte.html">Contacte</a></li>
+                <li><a href="./configuracio.html">Configuració</a></li>
+                <li><a href="./altra.html">Altra</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <aside class="lateral">
+        <div class="menu_lateral">
             <nav>
                 <ul>
-                    <li class="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
-                    <li><a href="./joc.html">Joc</a></li>
-                    <li><a href="./ajuda.html">Ajuda</a></li>
-                    <li><a href="./mapa.html">Mapa</a></li>
-                    <li><a href="./contacte.html">Contacte</a></li>
-                    <li><a href="./configuracio.html">Configuració</a></li>
-                    <li><a href="./altra.html">Altra</a></li>
+                    <li>Com es juga al Quatre en ratlla?
+                        <ul>
+                            <li><a href="./jugadors.html">Jugadors</a></li>
+                            <li><a href="./tauler.html">Tauler</a></li>
+                            <li><a href="./fitxes.html">Fitxes</a></li>
+                            <li><a href="./iniciJoc.html">Inici del joc</a></li>
+                            <li><a href="./desenvolupamentJoc.html">Desenvolupament del joc</a></li>
+                            <li><a href="./fiJoc.html">Fi del joc</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <main>
-        <aside class="lateral">
-            <div class="menu_lateral">
-                <nav>
-                    <ul>
-                        <li>Com es juga al Quatre en ratlla?
-                            <ul>
-                                <li><a href="./jugadors.html">Jugadors</a></li>
-                                <li><a href="./tauler.html">Tauler</a></li>
-                                <li><a href="./fitxes.html">Fitxes</a></li>
-                                <li><a href="./iniciJoc.html">Inici del joc</a></li>
-                                <li><a href="./desenvolupamentJoc.html">Desenvolupament del joc</a></li>
-                                <li><a href="./fiJoc.html">Fi del joc</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-        <section class="contingut">
-            <h2>Mapa</h2>
-            <div id="mapa"></div>
-        </section>
-    </main>
-    <footer class="fipagina">
-        <div>
-            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="insta" class="xarxes"></a>
-            <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="xarxes"></a>
-            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="xarxes"></a>
-            <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="xarxes"></a>
-            <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="xarxes"></a>
-            <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="xarxes"></a>
-            <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="xarxes"></a>
-        </div>
-        <p class="centrado">2023 &copy; IES Manacor ALL Rights Reserved</p>
-    </footer>
+    </aside>
+    <section class="contingut">
+        <h2>Mapa</h2>
+        <div id="mapa"></div>
+    </section>
+</main>
+<footer class="fipagina">
+    <div>
+        <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="insta" class="xarxes"></a>
+        <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="xarxes"></a>
+        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="xarxes"></a>
+        <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="xarxes"></a>
+        <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="xarxes"></a>
+        <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="xarxes"></a>
+        <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="xarxes"></a>
+    </div>
+    <p class="centrado">2023 &copy; IES Manacor ALL Rights Reserved</p>
+</footer>
 
-    <script>
-        var mapa = document.getElementById("mapa");
-        function init() {
-            navigator.geolocation.getCurrentPosition(function(posicion) {
-                var latitud = posicion.coords.latitude;
-                var longitud = posicion.coords.longitude;
-                var precision = posicion.coords.accuracy;
+<script src="js/mapa.js"></script>
 
-                var googleMarcador = google.maps.Marker;
-                var googleCirculo = google.maps.Circle;
-                var googleInfoPersonalizadaMarcador = google.maps.InfoWindow;
-
-                var colorRojo = "#FF0000";
-
-
-                var mapaPropiedades = {lat: latitud, lng: longitud};
-                var mapa = new google.maps.Map(document.getElementById("mapa"), {
-                    zoom: 15,
-                    center: mapaPropiedades,
-                });
-
-                var marcador = new googleMarcador ({
-                    position: mapaPropiedades,
-                    map: mapa,
-                    acurracy: precision
-                });
-
-                var circulo = new googleCirculo ({
-                    center: mapaPropiedades,
-                    radius: precision,
-                    map: mapa,
-                    strokeColor: colorRojo,
-                    strokeOpacity: 0.8,
-                    strokeWeight: 2,
-                    fillColor: colorRojo,
-                    fillOpacity: 0.35,
-                });
-                map.fitBounds(circulo.getBounds());
-
-                // añado la información personalizada al marcador
-                var informacionMarcador = new googleInfoPersonalizadaMarcador ({
-                    content: "Información personalizada"
-                });
-
-                marcador.addEventListener("click", function () {
-                    informacionMarcador.open(mapa, marcador);
-                });
-
-            })
-        }
-        init();
-    </script>
-
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7sDeOoFe2KTvrHeePf3zn43NMrGzVzXQ&callback=&v=weekly"
-    ></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7sDeOoFe2KTvrHeePf3zn43NMrGzVzXQ&callback=&v=weekly"
+></script>
 </body>
 
 </html>

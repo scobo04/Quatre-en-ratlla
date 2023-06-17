@@ -13,10 +13,10 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!--metadatos sociales facebook-->
-    <meta property="og:title" content="The Rock" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <meta property="og:title" content="The Rock"/>
+    <meta property="og:type" content="video.movie"/>
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/"/>
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg"/>
 
     <!--más metadatos necesarios-->
     <meta name='keywords' content='your, tags'>
@@ -72,7 +72,7 @@
             <img src="./img/tablero_4enRaya.jpg" alt="tablero">
             <p>
                 El Quatre en ratlla, també anomenat 4 en ratlla, 4 en línia o Connecta 4, és un joc de taula per a 2
-                jugadors o contra el mòdul d'Intel·ligència Artificial (Ai). Cada jugador tria un color
+                jugadors o contra el mòdul d'intel·ligència artificial (Ai). Cada jugador tria un color
                 diferent per a la fitxa i mitjançant torns col·loca una cada vegada en un panell de 7 columnes x 6
                 files. Les fitxes cauen apilandose a la seva columna. L'objectiu del joc és connectar quatre fitxes
                 d'un mateix color formant una línia horitzontal, vertical o diagonal abans que ho faci l'oponent.
@@ -82,17 +82,7 @@
         <canvas id="canvasJuego" width="490" height="420"></canvas>
         <p id="mensaje"></p>
         <button id="reiniciarBoton">REINICIAR</button>
-        <script src="cuatroEnRaya.js"></script>
-        <script>
-            var configuracionGuardada = localStorage.getItem("configuracion");
-            var configuracion = JSON.parse(configuracionGuardada);
-
-            // Ejemplo de cómo utilizar los valores guardados
-            console.log(configuracion.colorFons);
-            console.log(configuracion.idioma);
-            console.log(configuracion.colorFitxesJugador1);
-            console.log(configuracion.colorFitxesJugador2);
-        </script>
+        <script src="js/cuatroEnRaya.js"></script>
     </section>
 </main>
 <footer class="fipagina">

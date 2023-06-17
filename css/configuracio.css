@@ -1,0 +1,37 @@
+/* FORMULARIOS */
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, select, textarea {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit], input.submit {
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit]:hover, input.submit:hover {
+    background-color: #0056b3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

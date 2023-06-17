@@ -1,6 +1,3 @@
-
-
-/*ANIMACIÓN JOC*/
 .animacionJuego {
     display: flex;
     flex-direction: row;
@@ -15,8 +12,8 @@
     margin-right: 70px;
     position: initial;
 }
-/*ANIMACION JOC*/
-main>section>article.animacionJuego>img {
+
+main > section > article.animacionJuego > img {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -24,13 +21,43 @@ main>section>article.animacionJuego>img {
     -webkit-transition: 1s linear;
     transition: 1s linear;
 }
-main>section>article.animacionJuego>img:hover {
+
+main > section > article.animacionJuego > img:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
+main > section > article > img {
+    margin-bottom: 20px;
+}
+
+
 #canvasJuego {
     background-color: darkblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 386px;
+}
+
+
+button {
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

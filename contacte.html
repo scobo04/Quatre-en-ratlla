@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>contacte</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/configuracio.css">
     <!--metadatos sociales twitter-->
     <meta name="twitter:title" content="European Travel Destinations ">
     <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
@@ -12,10 +13,10 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!--metadatos sociales facebook-->
-    <meta property="og:title" content="The Rock" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <meta property="og:title" content="The Rock"/>
+    <meta property="og:type" content="video.movie"/>
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/"/>
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg"/>
 
     <!--más metadatos necesarios-->
     <meta name='keywords' content='your, tags'>
@@ -31,81 +32,81 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu">
+<header>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li class="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
+                <li><a href="./joc.html">Joc</a></li>
+                <li><a href="./ajuda.html">Ajuda</a></li>
+                <li><a href="./mapa.html">Mapa</a></li>
+                <li><a href="./contacte.html">Contacte</a></li>
+                <li><a href="./configuracio.html">Configuració</a></li>
+                <li><a href="./altra.html">Altra</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <aside class="lateral">
+        <div class="menu_lateral">
             <nav>
                 <ul>
-                    <li class="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
-                    <li><a href="./joc.html">Joc</a></li>
-                    <li><a href="./ajuda.html">Ajuda</a></li>
-                    <li><a href="./mapa.html">Mapa</a></li>
-                    <li><a href="./contacte.html">Contacte</a></li>
-                    <li><a href="./configuracio.html">Configuració</a></li>
-                    <li><a href="./altra.html">Altra</a></li>
+                    <li>Com es juga al Quatre en ratlla?
+                        <ul>
+                            <li><a href="./jugadors.html">Jugadors</a></li>
+                            <li><a href="./tauler.html">Tauler</a></li>
+                            <li><a href="./fitxes.html">Fitxes</a></li>
+                            <li><a href="./iniciJoc.html">Inici del joc</a></li>
+                            <li><a href="./desenvolupamentJoc.html">Desenvolupament del joc</a></li>
+                            <li><a href="./fiJoc.html">Fi del joc</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <main>
-        <aside class="lateral">
-            <div class="menu_lateral">
-                <nav>
-                    <ul>
-                        <li>Com es juga al Quatre en ratlla?
-                            <ul>
-                                <li><a href="./jugadors.html">Jugadors</a></li>
-                                <li><a href="./tauler.html">Tauler</a></li>
-                                <li><a href="./fitxes.html">Fitxes</a></li>
-                                <li><a href="./iniciJoc.html">Inici del joc</a></li>
-                                <li><a href="./desenvolupamentJoc.html">Desenvolupament del joc</a></li>
-                                <li><a href="./fiJoc.html">Fi del joc</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-        <section class="contingut">
-            <h2>Contacte</h2>
-            <form action="https://theteacher.codiblau.com/llmqs/practica/contacte" method="post">
-                <label for="nom">Nom:</label>
-                <input type="text" name="name" id="nom" minlength="2" maxlength="30" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-                <br>
-                <select name="type">
-                    <option value="CONSULTA">Consulta general</option>
-                    <option value="ERROR">Error</option>
-                    <option value="MILLORA">Millores</option>
-                    <option value="SUBSCRIBE">Inscripció anual</option>
-                </select>
-                <br>
-                <label for="telefon">Telèfon:</label>
-                <input type="tel" name="phone" id="telefon">
-                <br>
-                <label for="data_naixament">Data de naixament:</label>
-                <input type="date" name="birthday" id="data_naixament">
-                <br>
-                <label for="missatge">Missatge:</label>
-                <textarea name="message" id="missatge" required>Missatge de l'usuari</textarea>
-                <br>
-                <input type="submit" value="ENVIAR" class="submit">
-            </form>
-        </section>
-    </main>
-    <footer class="fipagina">
-        <div>
-            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="instagram" class="xarxes"></a>
-            <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="xarxes"></a>
-            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="xarxes"></a>
-            <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="xarxes"></a>
-            <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="xarxes"></a>
-            <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="xarxes"></a>
-            <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="xarxes"></a>
+    </aside>
+    <section class="contingut">
+        <h2>Contacte</h2>
+        <div id="formularioContacto">
+            <label for="nom">Nom:</label>
+            <input type="text" name="name" id="nom" minlength="2" maxlength="30" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <select name="type">
+                <option value="CONSULTA">Consulta general</option>
+                <option value="ERROR">Error</option>
+                <option value="MILLORA">Millores</option>
+                <option value="SUBSCRIBE">Inscripció anual</option>
+            </select>
+            <br>
+            <label for="telefon">Telèfon:</label>
+            <input type="tel" name="phone" id="telefon">
+            <br>
+            <label for="data_naixament">Data de naixament:</label>
+            <input type="date" name="birthday" id="data_naixament">
+            <br>
+            <label for="missatge">Missatge:</label>
+            <textarea name="message" id="missatge" required>Missatge de l'usuari</textarea>
+            <br>
+            <input type="submit" value="ENVIAR">
         </div>
-        <p class="centrado">2023 &copy; IES Manacor ALL Rights Reserved</p>
-    </footer>
+    </section>
+</main>
+<footer class="fipagina">
+    <div>
+        <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="instagram" class="xarxes"></a>
+        <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="xarxes"></a>
+        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="xarxes"></a>
+        <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="xarxes"></a>
+        <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="xarxes"></a>
+        <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="xarxes"></a>
+        <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="xarxes"></a>
+    </div>
+    <p class="centrado">2023 &copy; IES Manacor ALL Rights Reserved</p>
+</footer>
 </body>
 
 </html>

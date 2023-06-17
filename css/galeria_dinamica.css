@@ -14,12 +14,38 @@ section > nav#galeria_dinamica ul li a img {
     transition: 0.3s;
     filter: grayscale(50%);
 }
+
 section > nav#galeria_dinamica ul li a img:hover {
     opacity: 100%;
     margin-top: -5px;
     filter: grayscale(0%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 section > nav#galeria_dinamica ul li a img:active {
     transform: scale(0.8);
+}
+
+
+/* centrado de la galería */
+#textoImagenGaleria {
+    text-align: center;
+}
+
+#galeria_dinamica {
+    display: flex;
+    justify-content: center;
+}
+
+#galeria_dinamica ul {
+    list-style: none;
+    padding: 0;
+}
+
+#galeria_dinamica li {
+    margin-right: 10px;
+}
+
+#galeria_dinamica li:last-child {
+    margin-right: 0;
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>configuració</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacte.css">
     <!--metadatos sociales twitter-->
     <meta name="twitter:title" content="European Travel Destinations ">
     <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
@@ -85,38 +86,43 @@
             </select>
             <br>
             <label for="colorFitxesJugador1">Color fitxes jugador1:</label>
-            <select name="colorFitxesJugador1" id="colorFitxesJugador1">
-                <option value="vermell">Vermelles</option>
-                <option value="blau">Blaves</option>
-            </select>
+            <input type="color" name="colorFitxesJugador1" id="colorFitxesJugador1">
             <br>
             <label for="colorFitxesJugador2">Color fitxes jugador2:</label>
-            <select name="colorFitxesJugador2" id="colorFitxesJugador2">
-                <option value="verd">Verdes</option>
-                <option value="groc">Grogues</option>
-            </select>
+            <input type="color" name="colorFitxesJugador2" id="colorFitxesJugador2">
             <br>
-            <button id="enviarBtn">ENVIAR</button>
+            <input type="submit" value="ENVIAR" id="botonConfiguracion">
         </div>
 
         <script>
+            var configuracion;
+
+            function Configuracion(colorFons, idioma, colorFitxesJugador1, colorFitxesJugador2) {
+                this.colorFons = colorFons;
+                this.idioma = idioma;
+                this.colorFitxesJugador1 = colorFitxesJugador1;
+                this.colorFitxesJugador2 = colorFitxesJugador2;
+            }
+
+            function init() {
+                if (localStorage.getItem("configuracion")) {
+                    configuracion = JSON.parse(localStorage.getItem("configuracion"));
+                }
+            }
+
+            init();
+
             function guardarConfiguracion() {
                 var colorFons = document.getElementById("colorFons").value;
                 var idioma = document.getElementById("idioma").value;
                 var colorFitxesJugador1 = document.getElementById("colorFitxesJugador1").value;
                 var colorFitxesJugador2 = document.getElementById("colorFitxesJugador2").value;
 
-                var configuracion = {
-                    colorFons: colorFons,
-                    idioma: idioma,
-                    colorFitxesJugador1: colorFitxesJugador1,
-                    colorFitxesJugador2: colorFitxesJugador2
-                };
-
+                configuracion = new Configuracion(colorFons, idioma, colorFitxesJugador1, colorFitxesJugador2);
                 localStorage.setItem("configuracion", JSON.stringify(configuracion));
             }
 
-            document.addEventListener("DOMContentLoaded", function() {
+            document.addEventListener("DOMContentLoaded", function () {
                 var configuracionPorDefecto = {
                     colorFons: "taronja",
                     idioma: "espanyol",
@@ -130,39 +136,10 @@
                 }
             });
 
-            var enviarBtn = document.getElementById("enviarBtn");
-            enviarBtn.addEventListener("click", guardarConfiguracion);
+            var botonConfiguracion = document.getElementById("botonConfiguracion");
+            botonConfiguracion.addEventListener("click", guardarConfiguracion);
         </script>
 
-        <!--<form action="joc.html" method="post" id="formularioConfiguracion">
-            <label for="colorFons">Color del fons:</label>
-            <select name="colorFons" id="colorFons">
-                <option value="taronja">Taronja</option>
-                <option value="groc">Groc</option>
-                <option value="gris">Gris</option>
-            </select>
-            <br>
-            <label for="idioma">Idioma:</label>
-            <select name="idioma" id="idioma">
-                <option value="espanyol">Espanyol</option>
-                <option value="català">Català</option>
-                <option value="anglès">Anglès</option>
-            </select>
-            <br>
-            <label for="colorFitxesJugador1">Color fitxes jugador1:</label>
-            <select name="colorFitxesJugador1" id="colorFitxesJugador1">
-                <option value="vermell">Vermelles</option>
-                <option value="blau">Blaves</option>
-            </select>
-            <br>
-            <label for="colorFitxesJugador2">Color fitxes jugador2:</label>
-            <select name="colorFitxesJugador2" id="colorFitxesJugador2">
-                <option value="verd">Verdes</option>
-                <option value="groc">Grogues</option>
-            </select>
-            <br>
-            <input type="submit" value="ENVIAR" class="submit2">
-        </form>-->
     </section>
 
 </main>
