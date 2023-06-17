@@ -15,17 +15,17 @@ body {
     color: white;
 }
 
-/*CAPÇALERA*/
+/* CABECERA */
 header > .menu {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    border-bottom: 2px solid grey;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 70px;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
     font-size: 25px;
 }
 
@@ -41,7 +41,7 @@ header > .menu > nav > ul > li {
     margin-left: 0;
 }
 
-header > .menu > nav > ul > li:nth-child(1) {
+header > .menu > nav > ul > .logo {
     margin-left: 0;
 }
 
@@ -54,32 +54,29 @@ header > .menu > nav a {
     color: white;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-ul {
-    list-style: none;
-}
-
 header > .menu > nav > ul > .logo img {
     height: 60px;
     margin-top: 5px;
     margin-left: 50px;
 }
 
-/*MAIN*/
+ul {
+    list-style: none;
+}
+
+
+/* MAIN */
 main {
     display: grid;
     grid-template-columns: 22% 78%;
     grid-template-rows: auto;
+    margin-bottom: 250px;
 }
+
 
 main > aside {
     grid-column: 1 / 2;
     padding-top: 20px;
-    border-right: 2px solid grey;
     font-size: 15px;
 }
 
@@ -89,178 +86,105 @@ main > aside li {
     margin-bottom: 10px;
 }
 
+main > aside.lateral > div.menu_lateral > nav > ul > li > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+
 main > section {
     grid-column: 2 / 3;
     padding-top: 20px;
     margin-left: 20px;
 }
 
+main > section.contingut > h3 {
+    text-align: center;
+}
+
+main > section.contingut > p {
+    text-align: center;
+    margin-right: 5px;
+}
+
+main > section > iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > section > article > img {
+    margin-bottom: 20px;
+}
+
+main > section > canvas#canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main > section > img#galeria {
     width: 460px;
     height: 460px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}
+
+/* centrado de la galería */
+#textoImagenGaleria {
+    text-align: center;
+}
+
+#galeria_dinamica {
+    display: flex;
+    justify-content: center;
+}
+
+#galeria_dinamica ul {
+    list-style: none;
+    padding: 0;
+}
+
+#galeria_dinamica li {
+    margin-right: 10px;
+}
+
+#galeria_dinamica li:last-child {
+    margin-right: 0;
 }
 
 
-/*
-!*ANIMACIÓ 1*!
-@keyframes animacio1 {
-    from {
-        background-color: red;
-    }
-
-    to {
-        background-color: yellow;
-    }
+#canvasJuego {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 386px;
 }
 
-main>section>div:nth-child(3) {
-    height: 150px;
-    width: 150px;
-    background: red;
-
-    !*TRANSICIÓ*!
-    transition: width 3s, height 4s, transform 2s;
-    animation-name: animacio1;
-    animation-duration: 4s;
-    margin-bottom: 20px;
-}
-
-main>section>div:nth-child(3):hover {
-    width: 300px;
-    height: 300px;
-    transform: rotate(180deg);
-}
-!*ANIMACIÓ 2*!
-@keyframes animacio2 {
-    0% {
-        transform: scaleX(1);
-    }
-
-    50% {
-        transform: scaleX(-1);
-    }
-
-    100% {
-        transform: scaleX(1);
-    }
-}
-!*ANIMACIÓ 3*!
-@keyframes animacio3 {
-    0% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-
-    16% {
-        background-color: yellow;
-        left: 100px;
-        top: 0px;
-    }
-
-    32% {
-        background-color: red;
-        left: 200px;
-        top: 0px;
-    }
-
-    48% {
-        background-color: yellow;
-        left: 200px;
-        top: 100px;
-    }
-
-    64% {
-        background-color: red;
-        left: 100px;
-        top: 100px;
-    }
-
-    80% {
-        background-color: yellow;
-        left: 0px;
-        top: 100px;
-    }
-
-    96% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-
-}
-*/
-
-
-main > section > article.animacion2 > img {
-    width: 20%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: animacio2 5s linear infinite;
-    margin-bottom: 20px;
-}
-
-/*NO SÉ*/
-main > section > div:nth-child(5) {
+#reiniciarBoton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
     width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    animation-name: animacio3;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    margin-bottom: 120px;
+    height: 25px;
 }
 
-/*AJUSTAR MARGES*/
-main > form > select {
-    margin-right: 20px;
-}
-
-main > form > input {
-    margin-right: 20px;
-}
-
-main > form > textarea {
-    margin-right: 20px;
-}
-
-/*FORMULARIOS*/
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    display: block;
-}
-
-select {
-    display: block;
-}
-
-textarea {
-    display: block;
-}
-
-.submit {
-    display: block;
-}
-
-.submit2 {
-    display: block;
+#mensaje {
+    text-align: center;
 }
 
 
-/*FOOTER*/
+/* FOOTER */
 .fipagina {
     display: grid;
     grid-gap: 20px;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border-top: 2px solid grey;
 }
 
 .fipagina > div {
@@ -282,87 +206,52 @@ textarea {
     border-radius: 50%;
 }
 
-/*
 
-!* Media queries *!
-
-!* Estilos para pantallas grandes *!
-@media (max-width: 1600px) {
-    header > .menu > nav > ul > li {
-        margin: 0 60px;
-    }
-
-    main > aside li {
-        margin-left: 30px;
-    }
-
-    main > section {
-        margin-left: 10px;
-    }
+/* FORMULARIOS */
+h2 {
+    text-align: center;
 }
 
-!* Estilos para pantallas medianas *!
-@media (max-width: 1599px) {
-    header > .menu > nav > ul > li {
-        margin: 0 15px;
-        font-size: 25px;
-    }
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    main > aside li {
-        margin-left: 20px;
-    }
+input, select, textarea {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    main > section {
-        margin-left: 10px;
-    }
+input[type=submit], input.submit {
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    header > .menu > nav > ul > .logo {
-        margin-right: 20px;
-    }
+input[type=submit]:hover, input.submit:hover {
+    background-color: #0056b3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-!* Estilos para pantallas pequeñas *!
-@media (max-width: 768px) {
-    header > .menu > nav > ul > li {
-        margin: 0 7px;
-        font-size: 18px;
-    }
-
-    main > aside li {
-        margin-left: 20px;
-    }
-
-    main > section {
-        margin-left: 10px;
-    }
-
-    header > .menu > nav > ul > .logo {
-        margin-right: 15px;
-    }
-
-    header>.menu>nav>ul>.logo img {
-        height: 40px;
-        margin-top: 5px;
-    }
-
-
-
-    main > .contingut > .animacionJuego {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 50% 50%;
-    }
-
-    main > .contingut > .animacionJuego > img {
-        margin-bottom: 20px;
-    }
-}
-*/
-
-
-/* Para pantallas medianas*/
-@media screen and (max-width: 962px) {
+/* MEDIA QUERIES */
+/* Para pantallas de ancho máximo de 978px*/
+@media screen and (max-width: 978px) {
     body {
         display: grid;
         grid-template-rows: auto auto auto auto;
@@ -371,29 +260,24 @@ textarea {
 
     header {
         grid-row: 1 / 2;
-        grid-column: 1 / 1;
     }
 
     main {
         grid-row: 2 / 3;
-        grid-column: 1 / 1;
+        height: 850px;
     }
 
     footer {
         grid-row: 3 / 4;
-        grid-column: 1 / 1;
         height: 50px;
     }
+
 
     header > .menu > nav > ul {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 10px;
-    }
-
-    main {
-        height: 850px;
     }
 
     header > .menu > nav > ul > li {
@@ -410,70 +294,53 @@ textarea {
         margin-top: 5px;
     }
 
-    main > aside li {
-        margin-left: 20px;
-    }
-
-    main > section {
-        margin-left: 10px;
-    }
-
-    aside {
-        position: relative;
-        top: 0;
-        width: 100%;
-        max-width: none;
-        margin: 0;
-    }
-}
-
-/* Para pantallas medianas*/
-@media screen and (max-width: 855px) {
-    /*body {
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: auto;
-    }
-
-    header {
-        grid-row: 1 / 2;
-        grid-column: 1 / 1;
-    }
-
-    main {
-        grid-row: 2 / 3;
-        grid-column: 1 / 1;
-    }
-
-    footer {
-        grid-row: 3 / 4;
-        grid-column: 1 / 1;
-        height: 50px;
-    }
-
-    header > .menu > nav > ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 10px;
-    }
-
-    main {
-        height: 850px;
-    }*/
-
-    header > .menu > nav > ul > li {
-        margin: 0 10px;
-        font-size: 18px;
-    }
 
     main > aside {
         display: none;
     }
 
+    main > aside li {
+        margin-left: 20px;
+    }
+
     main > section {
         grid-column: 1 / 3;
+        margin-left: 10px;
     }
+
+    main > section > h3 {
+        text-align: center;
+    }
+
+    main > section > p {
+        text-align: center;
+    }
+
+    main > section > canvas#canvas {
+        width: 460px;
+        height: 460px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main > section > img#galeria {
+        width: 460px;
+        height: 460px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+    }
+}
+
+/* Para pantallas de ancho máximo de 855px*/
+@media screen and (max-width: 855px) {
+    header > .menu > nav > ul > li {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+
 
     main > section > article > img {
         display: block;
@@ -487,68 +354,35 @@ textarea {
         left: 0;
     }
 
-    /*header > .menu > nav > ul > .logo {
-        margin-right: 15px;
+    main > section > article.animacionJuego {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
 
-    header > .menu > nav > ul > .logo img {
-        height: 40px;
-        margin-top: 5px;
+    main > section > article.animacionJuego p {
+        text-align: justify;
+        margin-top: 20px;
+        max-width: 500px;
     }
 
-    main > aside li {
-        margin-left: 20px;
+
+    #canvasJuego {
+        background-color: darkblue;
+        margin-top: 20px;
     }
 
-    main > section {
-        margin-left: 10px;
-    }
 
-    aside {
-        position: relative;
-        top: 0;
-        width: 100%;
-        max-width: none;
-        margin: 0;
-    }*/
+    main > section > div#mapa {
+        width: 400px;
+        height: 445px;
+    }
 }
 
 
-/* Para pantallas pequeñas*/
+/* Para pantallas de ancho máximo de 620px*/
 @media screen and (max-width: 620px) {
-    /*body {
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: auto;
-    }
-
-    header {
-        grid-row: 1 / 2;
-        grid-column: 1 / 1;
-    }
-
-    main {
-        grid-row: 2 / 3;
-        grid-column: 1 / 1;
-    }
-
-    footer {
-        grid-row: 3 / 4;
-        grid-column: 1 / 1;
-        height: 50px;
-    }
-
-    header > .menu > nav > ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 10px;
-    }
-
-    main {
-        height: 850px;
-    }*/
-
     header > .menu > nav > ul > li {
         margin: 0 4px;
         font-size: 15px;
@@ -558,58 +392,19 @@ textarea {
         margin-left: auto;
     }
 
+
     main > section > iframe {
         width: 420px;
         height: 236px;
     }
 
-    main > section > h2 {
-        text-align: center;
-    }
-
     main > section > canvas#canvas {
-        width: 320px;
-        height: 320px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 400px;
+        height: 400px;
     }
 
     main > section > img#galeria {
-        width: 320px;
-        height: 320px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 400px;
+        height: 400px;
     }
-
-    main > section > img#galeria_dinamica {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /*header > .menu > nav > ul > .logo {
-        margin-right: 15px;
-    }
-
-    header > .menu > nav > ul > .logo img {
-        height: 40px;
-        margin-top: 5px;
-    }
-
-    main > aside li {
-        margin-left: 20px;
-    }
-
-    main > section {
-        margin-left: 10px;
-    }
-
-    aside {
-        position: relative;
-        top: 0;
-        width: 100%;
-        max-width: none;
-        margin: 0;
-    }*/
 }

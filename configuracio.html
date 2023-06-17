@@ -12,10 +12,10 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!--metadatos sociales facebook-->
-    <meta property="og:title" content="The Rock" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <meta property="og:title" content="The Rock"/>
+    <meta property="og:type" content="video.movie"/>
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/"/>
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg"/>
 
     <!--más metadatos necesarios-->
     <meta name='keywords' content='your, tags'>
@@ -31,85 +31,154 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu">
+<header>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li class="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
+                <li><a href="./joc.html">Joc</a></li>
+                <li><a href="./ajuda.html">Ajuda</a></li>
+                <li><a href="./mapa.html">Mapa</a></li>
+                <li><a href="./contacte.html">Contacte</a></li>
+                <li><a href="./configuracio.html">Configuració</a></li>
+                <li><a href="./altra.html">Altra</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <aside class="lateral">
+        <div class="menu_lateral">
             <nav>
                 <ul>
-                    <li class="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></li>
-                    <li><a href="./joc.html">Joc</a></li>
-                    <li><a href="./ajuda.html">Ajuda</a></li>
-                    <li><a href="./mapa.html">Mapa</a></li>
-                    <li><a href="./contacte.html">Contacte</a></li>
-                    <li><a href="./configuracio.html">Configuració</a></li>
-                    <li><a href="./altra.html">Altra</a></li>
+                    <li>Com es juga al Quatre en ratlla?
+                        <ul>
+                            <li><a href="./jugadors.html">Jugadors</a></li>
+                            <li><a href="./tauler.html">Tauler</a></li>
+                            <li><a href="./fitxes.html">Fitxes</a></li>
+                            <li><a href="./iniciJoc.html">Inici del joc</a></li>
+                            <li><a href="./desenvolupamentJoc.html">Desenvolupament del joc</a></li>
+                            <li><a href="./fiJoc.html">Fi del joc</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <main>
-        <aside class="lateral">
-            <div class="menu_lateral">
-                <nav>
-                    <ul>
-                        <li>Com es juga al Quatre en ratlla?
-                            <ul>
-                                <li><a href="./jugadors.html">Jugadors</a></li>
-                                <li><a href="./tauler.html">Tauler</a></li>
-                                <li><a href="./fitxes.html">Fitxes</a></li>
-                                <li><a href="./iniciJoc.html">Inici del joc</a></li>
-                                <li><a href="./desenvolupamentJoc.html">Desenvolupament del joc</a></li>
-                                <li><a href="./fiJoc.html">Fi del joc</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-        <section class="contingut">
-            <h2>Configuració</h2>
-            <form action="https://theteacher.codiblau.com/llmqs/practica/configuracio">
-                <label for="color_fons">Color del fons:</label>
-                <select name="color_fons" id="color_fons">
-                    <option value="taronja">Taronja</option>
-                    <option value="groc">Groc</option>
-                    <option value="gris">Gris</option>
-                </select>
-                <br>
-                <label for="idioma">Idioma:</label>
-                <select name="idioma" id="idioma">
-                    <option value="espanyol">Espanyol</option>
-                    <option value="català">Català</option>
-                    <option value="anglès">Anglès</option>
-                </select>
-                <br>
-                <label for="color_fitxes_jugador1">Color fitxes jugador1:</label>
-                <select name="color_fitxes_jugador1" id="color_fitxes_jugador1">
-                    <option value="vermell">Vermelles</option>
-                    <option value="blau">Blaves</option>
-                </select>
-                <br>
-                <label for="color_fitxes_jugador2">Color fitxes jugador2:</label>
-                <select name="color_fitxes_jugador2" id="color_fitxes_jugador2">
-                    <option value="verd">Verdes</option>
-                    <option value="groc">Grogues</option>
-                </select>
-                <br>
-                <input type="submit" value="ENVIAR" class="submit2">
-            </form>
-        </section>
-    </main>
-    <footer class="fipagina">
-        <div>
-            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="insta" class="xarxes"></a>
-            <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="xarxes"></a>
-            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="xarxes"></a>
-            <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="xarxes"></a>
-            <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="xarxes"></a>
-            <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="xarxes"></a>
-            <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="xarxes"></a>
+    </aside>
+    <section class="contingut">
+        <h2>Configuración del Juego</h2>
+
+
+        <div id="formularioConfiguracion">
+            <label for="colorFons">Color del fons:</label>
+            <select name="colorFons" id="colorFons">
+                <option value="taronja">Taronja</option>
+                <option value="groc">Groc</option>
+                <option value="gris">Gris</option>
+            </select>
+            <br>
+            <label for="idioma">Idioma:</label>
+            <select name="idioma" id="idioma">
+                <option value="espanyol">Espanyol</option>
+                <option value="català">Català</option>
+                <option value="anglès">Anglès</option>
+            </select>
+            <br>
+            <label for="colorFitxesJugador1">Color fitxes jugador1:</label>
+            <select name="colorFitxesJugador1" id="colorFitxesJugador1">
+                <option value="vermell">Vermelles</option>
+                <option value="blau">Blaves</option>
+            </select>
+            <br>
+            <label for="colorFitxesJugador2">Color fitxes jugador2:</label>
+            <select name="colorFitxesJugador2" id="colorFitxesJugador2">
+                <option value="verd">Verdes</option>
+                <option value="groc">Grogues</option>
+            </select>
+            <br>
+            <button id="enviarBtn">ENVIAR</button>
         </div>
-        <p class="centrado">2023 &copy; IES Manacor ALL Rights Reserved</p>
-    </footer>
+
+        <script>
+            function guardarConfiguracion() {
+                var colorFons = document.getElementById("colorFons").value;
+                var idioma = document.getElementById("idioma").value;
+                var colorFitxesJugador1 = document.getElementById("colorFitxesJugador1").value;
+                var colorFitxesJugador2 = document.getElementById("colorFitxesJugador2").value;
+
+                var configuracion = {
+                    colorFons: colorFons,
+                    idioma: idioma,
+                    colorFitxesJugador1: colorFitxesJugador1,
+                    colorFitxesJugador2: colorFitxesJugador2
+                };
+
+                localStorage.setItem("configuracion", JSON.stringify(configuracion));
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                var configuracionPorDefecto = {
+                    colorFons: "taronja",
+                    idioma: "espanyol",
+                    colorFitxesJugador1: "vermell",
+                    colorFitxesJugador2: "groc"
+                };
+
+                var configuracionGuardada = localStorage.getItem("configuracion");
+                if (!configuracionGuardada) {
+                    localStorage.setItem("configuracion", JSON.stringify(configuracionPorDefecto));
+                }
+            });
+
+            var enviarBtn = document.getElementById("enviarBtn");
+            enviarBtn.addEventListener("click", guardarConfiguracion);
+        </script>
+
+        <!--<form action="joc.html" method="post" id="formularioConfiguracion">
+            <label for="colorFons">Color del fons:</label>
+            <select name="colorFons" id="colorFons">
+                <option value="taronja">Taronja</option>
+                <option value="groc">Groc</option>
+                <option value="gris">Gris</option>
+            </select>
+            <br>
+            <label for="idioma">Idioma:</label>
+            <select name="idioma" id="idioma">
+                <option value="espanyol">Espanyol</option>
+                <option value="català">Català</option>
+                <option value="anglès">Anglès</option>
+            </select>
+            <br>
+            <label for="colorFitxesJugador1">Color fitxes jugador1:</label>
+            <select name="colorFitxesJugador1" id="colorFitxesJugador1">
+                <option value="vermell">Vermelles</option>
+                <option value="blau">Blaves</option>
+            </select>
+            <br>
+            <label for="colorFitxesJugador2">Color fitxes jugador2:</label>
+            <select name="colorFitxesJugador2" id="colorFitxesJugador2">
+                <option value="verd">Verdes</option>
+                <option value="groc">Grogues</option>
+            </select>
+            <br>
+            <input type="submit" value="ENVIAR" class="submit2">
+        </form>-->
+    </section>
+
+</main>
+<footer class="fipagina">
+    <div>
+        <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="insta" class="xarxes"></a>
+        <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="facebook" class="xarxes"></a>
+        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp.png" alt="whatsapp" class="xarxes"></a>
+        <a href="https://twitter.com/?lang=es"><img src="./img/twitter.png" alt="twitter" class="xarxes"></a>
+        <a href="https://www.messenger.com/"><img src="./img/messenger.png" alt="messenger" class="xarxes"></a>
+        <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube" class="xarxes"></a>
+        <a href="https://www.tiktok.com/es/"><img src="./img/tiktok.png" alt="tiktok" class="xarxes"></a>
+    </div>
+    <p class="centrado">2023 &copy; IES Manacor ALL Rights Reserved</p>
+</footer>
+
 </body>
 
 </html>

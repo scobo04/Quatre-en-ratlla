@@ -1,0 +1,10 @@
+#mapa {
+    width: 655px;
+    height: 700px;
+}
+
+main > section > div#mapa {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

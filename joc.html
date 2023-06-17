@@ -77,11 +77,22 @@
                 files. Les fitxes cauen apilandose a la seva columna. L'objectiu del joc és connectar quatre fitxes
                 d'un mateix color formant una línia horitzontal, vertical o diagonal abans que ho faci l'oponent.
             </p>
-
         </article>
-        <canvas>
 
-        </canvas>
+        <canvas id="canvasJuego" width="490" height="420"></canvas>
+        <p id="mensaje"></p>
+        <button id="reiniciarBoton">REINICIAR</button>
+        <script src="cuatroEnRaya.js"></script>
+        <script>
+            var configuracionGuardada = localStorage.getItem("configuracion");
+            var configuracion = JSON.parse(configuracionGuardada);
+
+            // Ejemplo de cómo utilizar los valores guardados
+            console.log(configuracion.colorFons);
+            console.log(configuracion.idioma);
+            console.log(configuracion.colorFitxesJugador1);
+            console.log(configuracion.colorFitxesJugador2);
+        </script>
     </section>
 </main>
 <footer class="fipagina">

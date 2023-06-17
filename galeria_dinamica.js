@@ -8,5 +8,5 @@ var textos=[
 
 function cargarfoto(img, txt){
     document.getElementById("galeria").src="https://picsum.photos/id/"+img+"/400/400";
-    document.getElementById("mitexto").innerHTML=textos[txt];
+    document.getElementById("textoImagenGaleria").innerHTML=textos[txt];
 }

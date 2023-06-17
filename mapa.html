@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>mapa</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/mapa.css">
     <!--metadatos sociales twitter-->
     <meta name="twitter:title" content="European Travel Destinations ">
     <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
@@ -67,9 +68,7 @@
         </aside>
         <section class="contingut">
             <h2>Mapa</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.909590809503!2d3.1976512153701164!3d39.56164607947379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1296490b762be963%3A0x246faf0a7fa80aac!2sInstituto%20p%C3%BAblico%20Manacor!5e0!3m2!1ses!2ses!4v1668116850145!5m2!1ses!2ses"
-                width="600" height="450"></iframe>
+            <div id="mapa"></div>
         </section>
     </main>
     <footer class="fipagina">
@@ -85,14 +84,20 @@
         <p class="centrado">2023 &copy; IES Manacor ALL Rights Reserved</p>
     </footer>
 
-
     <script>
+        var mapa = document.getElementById("mapa");
         function init() {
             navigator.geolocation.getCurrentPosition(function(posicion) {
                 var latitud = posicion.coords.latitude;
                 var longitud = posicion.coords.longitude;
+                var precision = posicion.coords.accuracy;
+
                 var googleMarcador = google.maps.Marker;
+                var googleCirculo = google.maps.Circle;
                 var googleInfoPersonalizadaMarcador = google.maps.InfoWindow;
+
+                var colorRojo = "#FF0000";
+
 
                 var mapaPropiedades = {lat: latitud, lng: longitud};
                 var mapa = new google.maps.Map(document.getElementById("mapa"), {
@@ -103,7 +108,20 @@
                 var marcador = new googleMarcador ({
                     position: mapaPropiedades,
                     map: mapa,
+                    acurracy: precision
                 });
+
+                var circulo = new googleCirculo ({
+                    center: mapaPropiedades,
+                    radius: precision,
+                    map: mapa,
+                    strokeColor: colorRojo,
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2,
+                    fillColor: colorRojo,
+                    fillOpacity: 0.35,
+                });
+                map.fitBounds(circulo.getBounds());
 
                 // añado la información personalizada al marcador
                 var informacionMarcador = new googleInfoPersonalizadaMarcador ({
@@ -116,6 +134,7 @@
 
             })
         }
+        init();
     </script>
 
     <script async defer
